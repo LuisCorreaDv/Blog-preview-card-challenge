@@ -9,8 +9,19 @@
   <title>Frontend Mentor | Blog preview card</title>
   <link href="./output.css" rel="stylesheet">
 
+  <!-- Figtree Extra Bold -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+
+  .figtree-fonts {
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
     
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -18,18 +29,30 @@
     .shadow{
       box-shadow: 8px 8px 0px 0px rgba(17,17,17);
     }
+
+    .article__description{
+      text-align: left;
+      color: #6B6B6B;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0px;
+      font-weight: 500;
+    }
   </style>
 </head>
-<body class="bg-yellow h-screen flex flex-wrap flex-col justify-center" style="align-items: center; gap: 24px;">
-  <div class="bg-white max-w-xs flex flex-col p-6 shadow" style="border-radius: 20px;">
+<body class="bg-yellow h-screen flex flex-wrap flex-col justify-center" style="align-items: center;">
+  <div class="bg-white max-w-xs flex flex-col p-6 shadow gap-6" style="border-radius: 20px; margin-bottom: 16px;">
     <figure class="overflow-hidden rounded-lg">
       <img src="./assets/images/illustration-article.svg" alt="illustration-article" class="w-full h-auto rounded-lg" style="border-radius: 10px;">
     </figure>
-    <article>
-      <span>Leading</span>
-      <p>Published 21 Dec 2023</p>
-      <h1>HTML & CSS foundations</h1>
-      <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+    <article style="margin: 0; padding: 0;">
+      <span href="#">
+        Learning
+      </span>
+      <p style="margin-bottom: 12px; margin-top: 12px;">Published 21 Dec 2023</p>
+      <h1 class="article__title" style="margin-bottom: 12px;">HTML & CSS foundations</h1>
+      <p class="article__description">These languages are the backbone of every website, defining structure, content, and
+        presentation.</p>
     </article>
     <footer>
       <img src="./assets/images/image-avatar.webp" alt="image avatar">
