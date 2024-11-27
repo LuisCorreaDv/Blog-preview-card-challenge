@@ -69,6 +69,18 @@
       letter-spacing: 0px;
     }
 
+    .card__author{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .card__author img{
+      width: 32px;
+      height: 32px;
+    }
+
     @media screen and (max-width: 375px){
       #card {
         max-width: 327px;
@@ -102,8 +114,8 @@
       <p class="article__description">These languages are the backbone of every website, defining structure, content, and
         presentation.</p>
     </article>
-    <footer>
-      <img src="./assets/images/image-avatar.webp" alt="image avatar">
+    <footer class="card__author">
+      <img src="./assets/images/image-avatar.webp" alt="image avatar" class="avatar">
       <p><strong>Greg Hooper</strong></p>
     </footer>
   </div>
