@@ -51,27 +51,53 @@
       color: #F4D04E;
     }
 
+    .article__publishDate{
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 150%;
+      letter-spacing: 0px;
+      color: #111111;
+    }
+
+    .article__category{
+      font-size: 14px;
+      padding: 4px 12px;
+      background-color: #F4D04E;
+      border-radius: 4px;
+      font-weight: 800;
+      line-height: 150%;
+      letter-spacing: 0px;
+    }
+
     @media screen and (max-width: 375px){
       #card {
         max-width: 327px;
       }
 
+      .article__category{
+        font-size: 12px;
+      }
+
       .article__title{
         font-size: 20px;
+      }
+
+      .article__publishDate{
+        font-size: 12px;
       }
     }
   </style>
 </head>
-<body class="bg-yellow h-screen flex flex-wrap flex-col justify-center" style="align-items: center;">
+<body class="bg-yellow h-screen flex flex-wrap flex-col justify-center figtree-fonts" style="align-items: center;">
   <div class="bg-white max-w-sm flex flex-col p-6 shadow gap-6" id="card" style="border-radius: 20px; margin-bottom: 16px;">
     <figure class="overflow-hidden rounded-lg">
       <img src="./assets/images/illustration-article.svg" alt="illustration-article" class="w-full h-auto rounded-lg" style="border-radius: 10px;">
     </figure>
     <article style="margin: 0; padding: 0;">
-      <span href="#">
+      <span class="article__category">
         Learning
       </span>
-      <p style="margin-bottom: 12px; margin-top: 12px;">Published 21 Dec 2023</p>
+      <p style="margin-bottom: 12px; margin-top: 12px;" class="article__publishDate">Published 21 Dec 2023</p>
       <h1 class="article__title" style="margin-bottom: 12px;">HTML & CSS foundations</h1>
       <p class="article__description">These languages are the backbone of every website, defining structure, content, and
         presentation.</p>
