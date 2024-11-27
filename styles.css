@@ -1,0 +1,81 @@
+.figtree-fonts {
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+    
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    .shadow{
+      box-shadow: 8px 8px 0px 0px rgba(17,17,17);
+    }
+
+    .article__description{
+      text-align: left;
+      color: #6B6B6B;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0px;
+      font-weight: 500;
+    }
+    
+    .article__title{
+      font-size: 24px;
+      line-height: 150%;
+      letter-spacing: 0px;
+      color: #111111;
+      font-weight: 800;
+    }
+
+    .article__title:hover{
+      color: #F4D04E;
+    }
+
+    .article__publishDate{
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 150%;
+      letter-spacing: 0px;
+      color: #111111;
+    }
+
+    .article__category{
+      font-size: 14px;
+      padding: 4px 12px;
+      background-color: #F4D04E;
+      border-radius: 4px;
+      font-weight: 800;
+      line-height: 150%;
+      letter-spacing: 0px;
+    }
+
+    .card__author{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .card__author img{
+      width: 32px;
+      height: 32px;
+    }
+
+    @media screen and (max-width: 375px){
+      #card {
+        max-width: 327px;
+      }
+
+      .article__category{
+        font-size: 12px;
+      }
+
+      .article__title{
+        font-size: 20px;
+      }
+
+      .article__publishDate{
+        font-size: 12px;
+      }
+    }
