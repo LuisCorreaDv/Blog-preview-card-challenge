@@ -38,10 +38,32 @@
       letter-spacing: 0px;
       font-weight: 500;
     }
+    
+    .article__title{
+      font-size: 24px;
+      line-height: 150%;
+      letter-spacing: 0px;
+      color: #111111;
+      font-weight: 800;
+    }
+
+    .article__title:hover{
+      color: #F4D04E;
+    }
+
+    @media screen and (max-width: 375px){
+      #card {
+        max-width: 327px;
+      }
+
+      .article__title{
+        font-size: 20px;
+      }
+    }
   </style>
 </head>
 <body class="bg-yellow h-screen flex flex-wrap flex-col justify-center" style="align-items: center;">
-  <div class="bg-white max-w-xs flex flex-col p-6 shadow gap-6" style="border-radius: 20px; margin-bottom: 16px;">
+  <div class="bg-white max-w-sm flex flex-col p-6 shadow gap-6" id="card" style="border-radius: 20px; margin-bottom: 16px;">
     <figure class="overflow-hidden rounded-lg">
       <img src="./assets/images/illustration-article.svg" alt="illustration-article" class="w-full h-auto rounded-lg" style="border-radius: 10px;">
     </figure>
